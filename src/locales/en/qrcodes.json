@@ -1,0 +1,11 @@
+{
+  "title": "Table QR Codes",
+  "description": "Print and place on tables for quick menu access",
+  "printAll": "Print All",
+  "table": "Table",
+  "capacity": "Capacity",
+  "people": "people",
+  "scanToOrder": "Scan to Order",
+  "scanInstruction": "Point your phone camera at the QR code",
+  "emptyState": "No tables to display. Add tables in the \"Table Management\" section."
+}

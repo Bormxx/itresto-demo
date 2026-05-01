@@ -1,0 +1,37 @@
+{
+  "ui": {
+    "button": {
+      "loading": "Wird geladen..."
+    },
+    "alert": {
+      "close": "Schließen"
+    },
+    "modal": {
+      "close": "Schließen"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen",
+      "cancelled": "Abgebrochen",
+      "processing": "Wird verarbeitet"
+    },
+    "validation": {
+      "required": "Pflichtfeld",
+      "email": "Ungültiges E-Mail-Format",
+      "phone": "Ungültiges Telefon-Format",
+      "minLength": "Mindestens {min} Zeichen",
+      "maxLength": "Maximal {max} Zeichen",
+      "min": "Mindestwert {min}",
+      "max": "Maximalwert {max}",
+      "pattern": "Ungültiges Format"
+    },
+    "api": {
+      "success": "Erfolg",
+      "error": "Ein Fehler ist aufgetreten",
+      "fileUploaded": "Datei hochgeladen",
+      "uploadFailed": "Upload fehlgeschlagen"
+    }
+  }
+}

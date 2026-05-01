@@ -1,0 +1,32 @@
+{
+  "welcome": "Manager Panel",
+  "subtitle": "Manage shifts, orders and conflicts",
+  "currentShift": "Current Shift",
+  "nav": {
+    "home": "Home",
+    "shifts": "Shifts",
+    "menu": "Menu",
+    "menuManagement": "Menu Management",
+    "orders": "Orders",
+    "reports": "Reports",
+    "conflicts": "Conflicts",
+    "reservations": "Reservations",
+    "currentShift": "Current Shift"
+  },
+  "cards": {
+    "shifts": "Shift Management",
+    "shiftsDescription": "Plan shifts and control staff attendance",
+    "menu": "Menu Activation",
+    "menuDescription": "Enable/disable dish visibility in guest menu",
+    "menuManagement": "Menu Management",
+    "menuManagementDescription": "Create and edit categories, dishes, modifiers",
+    "orders": "View Orders",
+    "ordersDescription": "Monitor orders in current shift",
+    "reports": "Reports",
+    "reportsDescription": "Statistics on orders, staff and conflicts",
+    "conflicts": "Conflict Resolution",
+    "conflictsDescription": "Resolve disputes and provide discounts",
+    "reservations": "Table Reservations",
+    "reservationsDescription": "Manage table bookings"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Payment Settings",
+  "subtitle": "Configure online payments through payment systems",
+  "paymentProvider": "Payment System",
+  "cloudpaymentsDescription": "CloudPayments — Russian payment system for accepting online payments",
+  "stripeDescription": "Stripe — International payment system for accepting online payments",
+  "publicKey": "Public ID",
+  "publicKeyPlaceholder": "Enter Public ID from CloudPayments",
+  "secretKey": "API Secret",
+  "secretKeyPlaceholder": "Enter API Secret from CloudPayments",
+  "publishableKey": "Publishable Key",
+  "publishableKeyPlaceholder": "Enter Publishable Key from Stripe",
+  "stripeSecretKey": "Secret Key",
+  "stripeSecretKeyPlaceholder": "Enter Secret Key from Stripe",
+  "saveButton": "Save Settings",
+  "savingButton": "Saving...",
+  "successMessage": "Settings saved successfully",
+  "errorMessage": "Error saving settings",
+  "instructionsTitle": "📖 How to get API keys?",
+  "instructionsCloudPayments": {
+    "title": "CloudPayments Instructions",
+    "step1": "1. Register at CloudPayments website",
+    "step1Link": "https://cloudpayments.ru/",
+    "step2": "2. In your account, go to «Settings» → «API»",
+    "step3": "3. Copy «Public ID» and paste it in the field above",
+    "step4": "4. Copy «API Secret» and paste it in the field above",
+    "step5": "5. Enter your bank account details to receive payments",
+    "step6": "6. Save settings and make a test payment"
+  },
+  "instructionsStripe": {
+    "title": "Stripe Instructions",
+    "step1": "1. Register at Stripe website",
+    "step1Link": "https://stripe.com/",
+    "step2": "2. In Dashboard, go to «Developers» → «API keys»",
+    "step3": "3. Copy «Publishable key» and paste it in the field above",
+    "step4": "4. Click «Reveal» for «Secret key», copy and paste it in the field above",
+    "step5": "5. Enter bank details in «Settings» → «Payouts»",
+    "step6": "6. Save settings and make a test payment"
+  },
+  "notConfigured": "Payment settings not configured",
+  "configured": "Payment system connected",
+  "requiredFields": "All fields are required"
+}

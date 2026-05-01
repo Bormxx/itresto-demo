@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["fra1"],
+  "env": {
+    "TURSO_DATABASE_URL": "@turso-demo-url",
+    "TURSO_AUTH_TOKEN": "@turso-demo-token",
+    "NEXTAUTH_URL": "https://demo.itresto.ru",
+    "NEXTAUTH_SECRET": "@nextauth-secret",
+    "DEMO_MODE": "true"
+  }
+}

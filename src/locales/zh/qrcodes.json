@@ -1,0 +1,11 @@
+{
+  "title": "桌台二维码",
+  "description": "打印并放置在桌台上以便快速访问菜单",
+  "printAll": "打印全部",
+  "table": "桌台",
+  "capacity": "容量",
+  "people": "人",
+  "scanToOrder": "扫码点餐",
+  "scanInstruction": "将手机摄像头对准二维码",
+  "emptyState": "没有要显示的桌台。请在桌台管理部分添加桌台。"
+}

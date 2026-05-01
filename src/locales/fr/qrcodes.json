@@ -1,0 +1,11 @@
+{
+  "title": "Codes QR des Tables",
+  "description": "Imprimez et placez sur les tables pour un accès rapide au menu",
+  "printAll": "Tout imprimer",
+  "table": "Table",
+  "capacity": "Capacité",
+  "people": "pers.",
+  "scanToOrder": "Scanner pour Commander",
+  "scanInstruction": "Pointez l'appareil photo de votre téléphone sur le code QR",
+  "emptyState": "Aucune table à afficher. Ajoutez des tables dans la section \"Gestion des Tables\"."
+}

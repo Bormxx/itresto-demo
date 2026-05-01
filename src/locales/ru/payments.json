@@ -1,0 +1,43 @@
+{
+  "title": "Настройки платежей",
+  "subtitle": "Настройте онлайн-оплату через платёжные системы",
+  "paymentProvider": "Платёжная система",
+  "cloudpaymentsDescription": "CloudPayments — российская платёжная система для приёма онлайн-платежей",
+  "stripeDescription": "Stripe — международная платёжная система для приёма онлайн-платежей",
+  "publicKey": "Public ID",
+  "publicKeyPlaceholder": "Введите Public ID из CloudPayments",
+  "secretKey": "API Secret",
+  "secretKeyPlaceholder": "Введите API Secret из CloudPayments",
+  "publishableKey": "Publishable Key",
+  "publishableKeyPlaceholder": "Введите Publishable Key из Stripe",
+  "stripeSecretKey": "Secret Key",
+  "stripeSecretKeyPlaceholder": "Введите Secret Key из Stripe",
+  "saveButton": "Сохранить настройки",
+  "savingButton": "Сохранение...",
+  "successMessage": "Настройки успешно сохранены",
+  "errorMessage": "Ошибка при сохранении настроек",
+  "instructionsTitle": "📖 Как получить ключи?",
+  "instructionsCloudPayments": {
+    "title": "Инструкция для CloudPayments",
+    "step1": "1. Зарегистрируйтесь на сайте CloudPayments",
+    "step1Link": "https://cloudpayments.ru/",
+    "step2": "2. В личном кабинете перейдите в раздел «Настройки» → «API»",
+    "step3": "3. Скопируйте «Public ID» и вставьте в поле выше",
+    "step4": "4. Скопируйте «API Secret» и вставьте в поле выше",
+    "step5": "5. Укажите реквизиты вашего расчётного счёта для получения платежей",
+    "step6": "6. Сохраните настройки и проведите тестовый платёж"
+  },
+  "instructionsStripe": {
+    "title": "Инструкция для Stripe",
+    "step1": "1. Зарегистрируйтесь на сайте Stripe",
+    "step1Link": "https://stripe.com/",
+    "step2": "2. В Dashboard перейдите в раздел «Developers» → «API keys»",
+    "step3": "3. Скопируйте «Publishable key» и вставьте в поле выше",
+    "step4": "4. Нажмите «Reveal» для «Secret key», скопируйте и вставьте в поле выше",
+    "step5": "5. Укажите банковские реквизиты в разделе «Settings» → «Payouts»",
+    "step6": "6. Сохраните настройки и проведите тестовый платёж"
+  },
+  "notConfigured": "Настройки платежей не заполнены",
+  "configured": "Платёжная система подключена",
+  "requiredFields": "Все поля обязательны для заполнения"
+}

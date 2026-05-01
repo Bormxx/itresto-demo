@@ -1,0 +1,37 @@
+{
+  "ui": {
+    "button": {
+      "loading": "読み込み中..."
+    },
+    "alert": {
+      "close": "閉じる"
+    },
+    "modal": {
+      "close": "閉じる"
+    },
+    "status": {
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "pending": "保留中",
+      "completed": "完了",
+      "cancelled": "キャンセル",
+      "processing": "処理中"
+    },
+    "validation": {
+      "required": "必須項目",
+      "email": "無効なメール形式",
+      "phone": "無効な電話番号形式",
+      "minLength": "最小{min}文字",
+      "maxLength": "最大{max}文字",
+      "min": "最小値{min}",
+      "max": "最大値{max}",
+      "pattern": "無効な形式"
+    },
+    "api": {
+      "success": "成功",
+      "error": "エラーが発生しました",
+      "fileUploaded": "ファイルがアップロードされました",
+      "uploadFailed": "アップロード失敗"
+    }
+  }
+}

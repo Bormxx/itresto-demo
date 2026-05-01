@@ -1,0 +1,11 @@
+{
+  "title": "Codici QR dei Tavoli",
+  "description": "Stampa e posiziona sui tavoli per accesso rapido al menu",
+  "printAll": "Stampa Tutto",
+  "table": "Tavolo",
+  "capacity": "Capacità",
+  "people": "pers.",
+  "scanToOrder": "Scansiona per Ordinare",
+  "scanInstruction": "Punta la fotocamera del telefono sul codice QR",
+  "emptyState": "Nessun tavolo da visualizzare. Aggiungi tavoli nella sezione \"Gestione Tavoli\"."
+}

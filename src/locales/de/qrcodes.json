@@ -1,0 +1,11 @@
+{
+  "title": "Tisch-QR-Codes",
+  "description": "Drucken und auf Tischen platzieren für schnellen Menüzugriff",
+  "printAll": "Alle drucken",
+  "table": "Tisch",
+  "capacity": "Kapazität",
+  "people": "Pers.",
+  "scanToOrder": "Zum Bestellen scannen",
+  "scanInstruction": "Richten Sie Ihre Handykamera auf den QR-Code",
+  "emptyState": "Keine Tische zum Anzeigen. Fügen Sie Tische im Bereich \"Tischverwaltung\" hinzu."
+}

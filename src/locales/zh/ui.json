@@ -1,0 +1,37 @@
+{
+  "ui": {
+    "button": {
+      "loading": "加载中..."
+    },
+    "alert": {
+      "close": "关闭"
+    },
+    "modal": {
+      "close": "关闭"
+    },
+    "status": {
+      "active": "活跃",
+      "inactive": "非活跃",
+      "pending": "待处理",
+      "completed": "已完成",
+      "cancelled": "已取消",
+      "processing": "处理中"
+    },
+    "validation": {
+      "required": "必填字段",
+      "email": "无效的电子邮件格式",
+      "phone": "无效的电话格式",
+      "minLength": "最少{min}个字符",
+      "maxLength": "最多{max}个字符",
+      "min": "最小值{min}",
+      "max": "最大值{max}",
+      "pattern": "无效格式"
+    },
+    "api": {
+      "success": "成功",
+      "error": "发生错误",
+      "fileUploaded": "文件已上传",
+      "uploadFailed": "上传失败"
+    }
+  }
+}

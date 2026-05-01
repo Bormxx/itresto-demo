@@ -1,0 +1,14 @@
+{
+  "title": "Loyalty Program",
+  "levels": "Levels",
+  "createLevel": "Create Level",
+  "editLevel": "Edit Level",
+  "levelName": "Name",
+  "pointsRequired": "Points Required",
+  "discount": "Discount (%)",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "active": "Active",
+  "inactive": "Inactive"
+}
