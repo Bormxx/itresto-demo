@@ -11,7 +11,9 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "db:seed": "tsx seed-turso.ts"
+    "db:seed": "tsx seed-turso.ts",
+    "cron:cleanup": "tsx scripts/run-cleanup.ts",
+    "cron:check": "tsx scripts/check-old-demos.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
