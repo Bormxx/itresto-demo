@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useSearchParams } from 'next/navigation';
 import { useForm } from '@/hooks/useForm';
@@ -7,15 +8,27 @@ import { Input } from '@/components/ui';
 import { Button } from '@/components/ui';
 import { Alert } from '@/components/ui';
 import { apiClient } from '@/lib/apiClient';
+import { OfertaGuestsModal } from './OfertaGuestsModal';
+import { PrivacyPolicyModal } from './PrivacyPolicyModal';
 
 export function ClientRegisterForm({ restaurant }: { restaurant: string }) {
   const searchParams = useSearchParams();
   const redirect = searchParams.get('redirect');
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
+  const [showOfertaModal, setShowOfertaModal] = useState(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
 
   const { values, errors, handleChange, handleSubmit, isSubmitting, setFieldError } = useForm({
     initialValues: {
       email: '',
       phone: '',
+    },
+    validate: (values) => {
+      const errors: Record<string, string> = {};
+      if (!agreedToTerms) {
+        errors.terms = 'Необходимо принять условия оферты и политику конфиденциальности';
+      }
+      return errors;
     },
     onSubmit: async (values) => {
       // Регистрация
@@ -103,11 +116,59 @@ export function ClientRegisterForm({ restaurant }: { restaurant: string }) {
           Зарегистрироваться
         </Button>
 
+        <div className="mt-4">
+          <label className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              checked={agreedToTerms}
+              onChange={(e) => setAgreedToTerms(e.target.checked)}
+              className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+            />
+            <span className="text-sm text-[#6b7280]">
+              Я принимаю условия{' '}
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowOfertaModal(true);
+                }}
+                className="text-[#2563eb] underline hover:no-underline"
+              >
+                публичной оферты
+              </button>
+              {' '}и{' '}
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowPrivacyModal(true);
+                }}
+                className="text-[#2563eb] underline hover:no-underline"
+              >
+                политики конфиденциальности
+              </button>
+            </span>
+          </label>
+          {errors.terms && (
+            <p className="mt-1 text-sm text-red-600">{errors.terms}</p>
+          )}
+        </div>
+
         <p className="mt-4 text-xs text-[#6b7280]">
           * Обязательные поля. Фамилия, имя, отчество и дата рождения
           можно будет указать позже в личном кабинете.
         </p>
       </div>
+
+      <OfertaGuestsModal
+        isOpen={showOfertaModal}
+        onClose={() => setShowOfertaModal(false)}
+      />
+      
+      <PrivacyPolicyModal
+        isOpen={showPrivacyModal}
+        onClose={() => setShowPrivacyModal(false)}
+      />
     </form>
   );
 }

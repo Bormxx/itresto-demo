@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui';
+import { OfertaGuestsModal } from './OfertaGuestsModal';
+import { PrivacyPolicyModal } from './PrivacyPolicyModal';
 
 interface ClientRegisterModalProps {
   isOpen: boolean;
@@ -23,8 +25,11 @@ export function ClientRegisterModal({
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showOfertaModal, setShowOfertaModal] = useState(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
 
   // Block body scroll when modal is open
   useEffect(() => {
@@ -42,6 +47,12 @@ export function ClientRegisterModal({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
+    if (!agreedToTerms) {
+      setError('Необходимо принять условия оферты и политику конфиденциальности');
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -199,6 +210,41 @@ export function ClientRegisterModal({
               Зарегистрироваться
             </Button>
 
+            <div className="mt-4">
+              <label className="flex items-start gap-2">
+                <input
+                  type="checkbox"
+                  checked={agreedToTerms}
+                  onChange={(e) => setAgreedToTerms(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span className="text-sm text-[#6b7280]">
+                  Я принимаю условия{' '}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setShowOfertaModal(true);
+                    }}
+                    className="text-[#2563eb] underline hover:no-underline"
+                  >
+                    публичной оферты
+                  </button>
+                  {' '}и{' '}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setShowPrivacyModal(true);
+                    }}
+                    className="text-[#2563eb] underline hover:no-underline"
+                  >
+                    политики конфиденциальности
+                  </button>
+                </span>
+              </label>
+            </div>
+
             <p className="text-xs text-[#6b7280]">
               * Обязательные поля. Фамилия, имя, отчество и дата рождения
               можно будет указать позже в личном кабинете.
@@ -216,6 +262,16 @@ export function ClientRegisterModal({
           </p>
         </div>
       </div>
+
+      <OfertaGuestsModal
+        isOpen={showOfertaModal}
+        onClose={() => setShowOfertaModal(false)}
+      />
+      
+      <PrivacyPolicyModal
+        isOpen={showPrivacyModal}
+        onClose={() => setShowPrivacyModal(false)}
+      />
     </div>
   );
 }
